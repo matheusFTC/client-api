@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="lolipop">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="assets/css/lolipop.css" rel="stylesheet">
+
+  <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/angular/angular.js"></script>
+  <script src="assets/vendor/angular-cookies/angular-cookies.js"></script>
+  <script src="assets/vendor/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="services/item.js"></script>
+  <script src="services/product.js"></script>
+  <script src="controllers/item.js"></script>
+  <script src="controllers/product.js"></script>
+  <script src="routes/item.js"></script>
+  <script src="routes/product.js"></script>
+
+  <title>.lolipop</title>
+</head>
+
+<body>
+  <ng-view></ng-view>
+
+  <ng-include src="'views/message.html'"></ng-include>
+</body>
+
+</html>

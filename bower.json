@@ -1,0 +1,21 @@
+{
+  "name": "client-api",
+  "homepage": "https://github.com/matheusFTC/client-api",
+  "authors": [
+    "Matheus Filipe T. Chaves <matheus.02468@gmail.com>"
+  ],
+  "description": "Client API (.lolipop)",
+  "main": "app.js",
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "assets/vendor"
+  ],
+  "dependencies": {
+    "angular": "^1.5.9",
+    "angular-cookies": "^1.6.4",
+    "angular-route": "^1.5.9",
+    "bootstrap": "^3.3.7"
+  }
+}
