@@ -1,0 +1,16 @@
+<div class="container">
+  <form class="signin-form">
+    <h1 class="signin-form-heading">Sign In</h1>
+    <div class="form-group">
+      <label for="inputEmail">Email</label>
+      <input id="inputEmail" type="email" class="form-control" placeholder="Email" ng-model="email">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword">Password</label>
+      <input id="inputPassword" type="password" class="form-control" placeholder="Password" ng-model="password">
+    </div>
+    <ng-include src="'views/message.html'"></ng-include>
+    <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="authenticate()">Sing In</button>
+    <a role="button" class="btn btn-secondary btn-lg btn-block" ng-href="#!/signup">Sign Up</a>
+  </form>
+</div>

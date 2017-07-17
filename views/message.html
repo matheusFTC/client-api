@@ -1,5 +1,3 @@
-<div id="message" class="alert alert-dismissible" role="alert" ng-if="message.isSuccess || message.isError" ng-class="{'alert-success': message.isSuccess, 'alert-danger': message.isError}">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close" ng-click="message.close()">
-    <span aria-hidden="true">&times;</span>
-  </button> {{message.text}}
+<div id="message" ng-if="message.isSuccess || message.isError">
+  <p class="text-center font-weight-bold" ng-class="{'text-success': message.isSuccess, 'text-danger': message.isError}">{{message.text}}</p>
 </div>

@@ -13,9 +13,9 @@
     "assets/vendor"
   ],
   "dependencies": {
-    "angular": "^1.5.9",
-    "angular-cookies": "^1.6.4",
-    "angular-route": "^1.5.9",
-    "bootstrap": "^3.3.7"
+    "angular": "^1.6.5",
+    "angular-cookies": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "bootstrap": "v4.0.0-alpha.6"
   }
 }
