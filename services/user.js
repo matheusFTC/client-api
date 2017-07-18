@@ -20,6 +20,8 @@ app.factory("User", function ($http) {
             var data = $.param({
                 email: user.email,
                 password: user.password,
+                newPassword: user.newPassword,
+                newPasswordConfirm: user.newPasswordConfirm,
                 fullname: user.fullname,
                 nif: user.nif,
                 phone: user.phone,

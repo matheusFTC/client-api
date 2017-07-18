@@ -2,7 +2,54 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2">
-            <h1>Profile</h1>
+            <form class="profile-form">
+                <h1 class="profile-form-heading">Profile</h1>
+                <p class="lead">Pesonal Data</p>
+                <div class="form-group">
+                    <label for="inputFullname">Fullname</label>
+                    <input id="inputFullname" type="text" class="form-control" placeholder="Fullname" ng-model="user.fullname">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input id="inputEmail" type="email" class="form-control" placeholder="Email" ng-model="user.email">
+                </div>
+                <div class="form-group">
+                    <label for="inputNIF">NIF</label>
+                    <input id="inputNIF" type="text" class="form-control" placeholder="NIF" ng-model="user.nif">
+                </div>
+                <div class="form-group">
+                    <label for="inputBirth">Birth</label>
+                    <input id="inputBirth" type="text" class="form-control" placeholder="Birth" ng-model="user.birth">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword">Password</label>
+                    <input id="inputPassword" type="password" class="form-control" placeholder="Password" ng-model="user.password">
+                    <small id="inputPasswordHelp" class="form-text text-muted">Enter your password to make any changes</small>
+                </div>
+                <div class="form-group">
+                    <label for="inputNewPassword">New Password</label>
+                    <input id="inputNewPassword" type="password" class="form-control" placeholder="New Password" ng-model="user.newPassword">
+                    <small id="inputNewPasswordHelp" class="form-text text-muted">Use this field only to change password.</small>
+                </div>
+                <div class="form-group">
+                    <label for="inputNewPasswordConfirm">New Password Confirm</label>
+                    <input id="inputNewPasswordConfirm" type="password" class="form-control" placeholder="New Password Confirm" ng-model="user.newPasswordConfirm">
+                    <small id="inputNewPasswordConfirmHelp" class="form-text text-muted">Use this field only to change password.</small>
+                </div>
+                <div class="form-group">
+                    <label for="inputPhone">Phone</label>
+                    <input id="inputPhone" type="tel" class="form-control" placeholder="Phone" ng-model="user.phone">
+                </div>
+                <div class="form-group">
+                    <label for="selectGender">Gender</label>
+                    <select id="selectGender" class="form-control" ng-model="user.gender">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                </div>
+                <ng-include src="'views/messenger.html'"></ng-include>
+                <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="save()">Save</button>
+            </form>
         </div>
     </div>
 </div>

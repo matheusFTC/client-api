@@ -6,15 +6,18 @@ body {
 
 #messenger {
   max-width: 330px;
-  margin: 15px 10px;
+  margin: 15px auto;
 }
 
 .signin-form, .signout-form, .signup-form {
     max-width: 330px;
+}
+
+.signin-form, .signout-form, .signup-form, .profile-form {
     padding: 15px;
     margin: 0 auto;
 }
 
-.signin-form .signin-form-heading, .signout-form .signout-form-heading,.signup-form .signup-form-heading {
+.signin-form .signin-form-heading, .signout-form .signout-form-heading, .signup-form .signup-form-heading, .profile-form .profile-form-heading {
     margin-bottom: 15px;
 }
