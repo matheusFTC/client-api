@@ -6,6 +6,14 @@ app.config(function ($routeProvider) {
 
     $routeProvider.when("/signin", {
         templateUrl: "views/signin.html",
-        controller: "signinController"
+        controller: "signinController",
+        resolve: {
+            clear: function ($cookies, $localStorage) {
+                $cookies.put("token", undefined);
+                $cookies.put("expires", undefined);
+
+                $localStorage.$reset();
+            }
+        }
     });
 });

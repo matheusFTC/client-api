@@ -1,6 +1,6 @@
 "use strict";
 
-var app = angular.module("lolipop", ["ngRoute", "ngCookies"]).info(
+var app = angular.module("lolipop", ["ngRoute", "ngCookies", "ngStorage"]).info(
   {
     version: "1.0.0",
     api: "https://restful-api-dwa.herokuapp.com"
@@ -15,9 +15,9 @@ app.config(function ($routeProvider) {
 
 });
 
-app.run(function ($rootScope) {
+app.run(function ($rootScope, $localStorage) {
 
-  $rootScope.message = {
+  $rootScope.messenger = {
     text: null,
     isSuccess: false,
     isError: false,
@@ -42,5 +42,7 @@ app.run(function ($rootScope) {
       this.isError = false;
     }
   };
+
+  $rootScope.$storage = $localStorage;
 
 });

@@ -1,0 +1,3 @@
+<div id="messenger" ng-if="messenger.isSuccess || messenger.isError">
+  <p class="text-center font-weight-bold" ng-class="{'text-success': messenger.isSuccess, 'text-danger': messenger.isError}">{{messenger.text}}</p>
+</div>

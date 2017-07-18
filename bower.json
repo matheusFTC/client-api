@@ -16,6 +16,7 @@
     "angular": "^1.6.5",
     "angular-cookies": "^1.6.5",
     "angular-route": "^1.6.5",
-    "bootstrap": "v4.0.0-alpha.6"
+    "bootstrap": "v4.0.0-alpha.6",
+    "ngstorage": "^0.3.11"
   }
 }
