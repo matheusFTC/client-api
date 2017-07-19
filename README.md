@@ -4,7 +4,9 @@ Client API com Angular.js e Bootstrap
 ## Resumo
 Este projeto foi desenvolvido para a disciplina de Criação de Aplicações Web Apps, da pós-graduação em DESIGN WEB APPS COM TECNOLOGIA FRONT-END, no INSTITUTO BRASILEIRO DE EXPERTISE PROFISSIONAL.
 
-Este projeto utiliza uma API hospedada no Heroku (https://restful-api-dwa.herokuapp.com). O código fonte da API pode ser visualizado por meio da seguinte URL: https://github.com/matheusFTC/restful-api.
+Este projeto utiliza uma API hospedada no Heroku (https://restful-api-dwa.herokuapp.com).
+
+O código fonte da API pode ser visualizado por meio da seguinte URL: https://github.com/matheusFTC/restful-api.
 
 Serão passadas aqui instruções que permitirão obter uma cópia do projeto e executar o mesmo.
 
