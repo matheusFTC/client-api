@@ -8,7 +8,7 @@ app.controller("profileController", function ($scope, $cookies, User) {
 
     $scope.clear = function () {
         $scope.user = angular.copy($scope.$storage.user);
-        
+
         $scope.user.password = null;
         $scope.user.newPassword = null;
         $scope.user.newPasswordConfirm = null;
@@ -36,7 +36,11 @@ app.controller("profileController", function ($scope, $cookies, User) {
                         $scope.messenger.success("User updated successfully.");
                     })
                     .catch(function (error) {
-                        $scope.messenger.error("This action could not be taken.");
+                        if (error.status === 401) {
+                            $scope.messenger.error("Unauthorized.");
+                        } else {
+                            $scope.messenger.error("This action could not be taken.");
+                        }
                     });
             }
         }
