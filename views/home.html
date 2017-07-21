@@ -1,1 +1,20 @@
 <ng-include src="'views/navbar.html'"></ng-include>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <div class="d-flex flex-wrap">
+                <div class="card product-container" ng-repeat="product in products">
+                    <img class="img-fluid card-img-top" ng-src="{{product.image}}" alt="{{product.name}}">
+                    <div class="card-block">
+                        <h4 class="card-title">{{product.name}}</h4>
+                        <p class="card-text">{{product.description}}</p>
+                    </div>
+                    <div class="card-footer product-container-footer d-flex w-100 justify-content-between">
+                        <a ng-href="#!/home" class="btn btn-primary">Add to Cart</a>
+                        <p>$ {{product.price}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

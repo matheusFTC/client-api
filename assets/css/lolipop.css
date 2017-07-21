@@ -28,3 +28,13 @@ form {
 .addresses-container .addresses-container-heading {
     margin-bottom: 15px;
 }
+
+.product-container {
+    max-width: 288px;
+    margin: 15px auto;
+}
+
+.product-container-footer {
+    background-color: unset;
+    border-top: unset;
+}
