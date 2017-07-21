@@ -1,6 +1,6 @@
-<div class="container">
-  <form class="signup-form">
-    <h1 class="signup-form-heading">Sign Up</h1>
+<div class="container signup-container">
+  <h1 class="signup-container-heading">Sign Up</h1>
+  <form>
     <div class="form-group">
       <label for="inputFullname">Fullname</label>
       <input id="inputFullname" type="text" class="form-control" placeholder="Fullname" ng-model="user.fullname">
@@ -30,6 +30,6 @@
     </div>
     <ng-include src="'views/messenger.html'"></ng-include>
     <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="create()">Create New Account</button>
-    <a role="button" class="btn btn-secondary btn-lg btn-block" ng-href="#!/signin">Back</a>
   </form>
+  <a role="button" class="btn btn-secondary btn-lg btn-block" ng-href="#!/signin">Back</a>
 </div>

@@ -4,20 +4,27 @@ body {
   padding-top: 70px;
 }
 
+form {
+  margin-bottom: 15px;
+}
+
 #messenger {
   max-width: 330px;
   margin: 15px auto;
 }
 
-.signin-form, .signout-form, .signup-form {
+.signin-container, .signout-container, .signup-container {
     max-width: 330px;
 }
 
-.signin-form, .signout-form, .signup-form, .profile-form {
+.signin-container, .signout-container, .signup-container, 
+.profile-container, .addresses-container {
     padding: 15px;
     margin: 0 auto;
 }
 
-.signin-form .signin-form-heading, .signout-form .signout-form-heading, .signup-form .signup-form-heading, .profile-form .profile-form-heading {
+.signin-container .signin-container-heading, .signout-container .signout-container-heading, 
+.signup-container .signup-container-heading, .profile-container .profile-container-heading, 
+.addresses-container .addresses-container-heading {
     margin-bottom: 15px;
 }

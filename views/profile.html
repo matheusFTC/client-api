@@ -1,10 +1,10 @@
 <ng-include src="'views/navbar.html'"></ng-include>
-<div class="container">
+<div class="container profile-container">
     <div class="row">
         <div class="col-md-8 offset-md-2">
-            <form class="profile-form">
-                <h1 class="profile-form-heading">Profile</h1>
-                <p class="lead">Pesonal Data</p>
+            <h1 class="profile-container-heading">Profile</h1>
+            <p class="lead">Pesonal Data</p>
+            <form>
                 <div class="form-group">
                     <label for="inputFullname">Fullname</label>
                     <input id="inputFullname" type="text" class="form-control" placeholder="Fullname" ng-model="user.fullname">
@@ -24,7 +24,7 @@
                 <div class="form-group">
                     <label for="inputPassword">Password</label>
                     <input id="inputPassword" type="password" class="form-control" placeholder="Password" ng-model="user.password">
-                    <small id="inputPasswordHelp" class="form-text text-muted">Enter your password to make any changes</small>
+                    <small id="inputPasswordHelp" class="form-text text-muted">Enter your password to make any changes.</small>
                 </div>
                 <div class="form-group">
                     <label for="inputNewPassword">New Password</label>
@@ -46,6 +46,9 @@
                         <option value="M">Male</option>
                         <option value="F">Female</option>
                     </select>
+                </div>
+                <div class="form-group">
+                    <a ng-href="#!/profile/addresses">Addresses</a>
                 </div>
                 <ng-include src="'views/messenger.html'"></ng-include>
                 <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="save()">Save</button>
