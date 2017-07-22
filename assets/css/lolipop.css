@@ -13,6 +13,21 @@ form {
   margin: 15px auto;
 }
 
+#car .card{
+    padding-bottom: 2rem;
+    flex: 1 1;
+}
+
+#car .card-footer p{
+    min-width: 18%;
+}
+
+@media screen and (max-width: 992px){
+    #car{
+        flex-flow: column;
+    }
+}
+
 .signin-container, .signout-container, .signup-container {
     max-width: 330px;
 }
