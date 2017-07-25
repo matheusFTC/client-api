@@ -2,7 +2,7 @@
 
 var app = angular.module("lolipop");
 
-app.controller("carController", function ($scope, Product) {
+app.controller("cartController", function ($scope, Product) {
 
     $scope.products;
     $scope.qtd;
