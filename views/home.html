@@ -10,7 +10,7 @@
                         <p class="card-text">{{product.description}}</p>
                     </div>
                     <div class="card-footer product-container-footer d-flex w-100 justify-content-between">
-                        <a ng-href="#!/home" class="btn btn-primary">Add to Cart</a>
+                        <button type="button" class="btn btn-primary" ng-click="addToCart(product)">Add to Cart</button>
                         <p>$ {{product.price}}</p>
                     </div>
                 </div>

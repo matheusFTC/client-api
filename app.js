@@ -15,7 +15,7 @@ app.config(function ($routeProvider) {
 
 });
 
-app.run(function ($rootScope, $localStorage) {
+app.run(function ($rootScope, $localStorage, $sessionStorage) {
 
   $rootScope.messenger = {
     text: null,
@@ -44,5 +44,7 @@ app.run(function ($rootScope, $localStorage) {
   };
 
   $rootScope.$storage = $localStorage;
-
+  $rootScope.$session = $sessionStorage;
+  
+  $rootScope.$session.cart;
 });
