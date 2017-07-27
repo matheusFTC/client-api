@@ -5,9 +5,9 @@
             <h1 class="addresses-container-heading">Cart</h1>
             <p class="lead">Cart Items</p>
             <ul class="list-group">
-                <li class="list-group-item justify-content-between" ng-repeat="item in $session.cart">
-                    {{item.product.name}} ({{item.amount}})
-                    <span class="badge badge-default badge-pill">{{item.amount}}</span>
+                <li class="list-group-item justify-content-between" ng-repeat="item in $session.cart" ng-dblclick="remove($index)">
+                    {{item.product.name}}
+                    <input type="number" min="0" max="999999999" class="input-cart-items-amount" ng-model="item.amount" ng-change="change(item)">
                 </li>
             </ul>
         </div>

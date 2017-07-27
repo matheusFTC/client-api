@@ -45,6 +45,4 @@ app.run(function ($rootScope, $localStorage, $sessionStorage) {
 
   $rootScope.$storage = $localStorage;
   $rootScope.$session = $sessionStorage;
-  
-  $rootScope.$session.cart;
 });

@@ -38,3 +38,15 @@ form {
     background-color: unset;
     border-top: unset;
 }
+
+.input-cart-items-amount {
+    width: 20%;
+    border-left-style: none;
+    border-top-style: none;
+    border-right-style: none;
+    text-align: right;
+}
+
+.input-cart-items-amount:focus {
+    outline: 0;
+}
