@@ -9,6 +9,7 @@ Este projeto utiliza uma API hospedada no Heroku (https://restful-api-dwa.heroku
 O código fonte da API pode ser visualizado por meio da seguinte URL: https://github.com/matheusFTC/restful-api.
 
 Serão passadas aqui instruções que permitirão obter uma cópia do projeto e executar o mesmo.
+## Como Usar
 
 ### Pré-requisitos
 O que você precisa para instalar e rodar o projeto:
@@ -24,3 +25,6 @@ Um passo a passo...
 3. Levante a aplicação por meio de um servidor web;
 
 OBS.: Para fins de teste, você pode utlizar o módulo http-server (https://www.npmjs.com/package/http-server) para levantar o servidor web.
+
+## Licença
+MIT License (MIT).
