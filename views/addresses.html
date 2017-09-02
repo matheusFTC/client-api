@@ -29,8 +29,25 @@
                     <label for="inputReference">Reference</label>
                     <input id="inputReference" type="text" class="form-control" placeholder="Reference" ng-model="address.reference">
                 </div>
+                <div class="form-group">
+                    <label for="inputNeighborhood">Neighborhood</label>
+                    <input id="inputNeighborhood" type="text" class="form-control" placeholder="Neighborhood" ng-model="address.neighborhood">
+                </div>
+                <div class="form-group">
+                    <label for="inputCity">City</label>
+                    <input id="inputCity" type="text" class="form-control" placeholder="City" ng-model="address.city">
+                </div>
+                <div class="form-group">
+                    <label for="inputState">State</label>
+                    <input id="inputState" type="text" class="form-control" placeholder="State" ng-model="address.state">
+                </div>
+                <div class="form-group">
+                    <label for="inputCountry">Country</label>
+                    <input id="inputCountry" type="text" class="form-control" placeholder="Country" ng-model="address.country">
+                </div>
                 <ng-include src="'views/messenger.html'"></ng-include>
                 <button type="button" class="btn btn-primary btn-lg btn-block" ng-click="add()">Add</button>
+                <a role="button" class="btn btn-secondary btn-lg btn-block" ng-href="#!/profile">Back to Profile</a>
             </form>
         </div>
         <div class="col-md-4">
@@ -45,17 +62,12 @@
                                 </button>
                             </div>
                             <div class="d-flex w-100">
-                                <p>{{address.place}}, {{address.number}}, {{address.zipCode}}<br />{{address.complement}}<br />{{address.reference}}</p>
+                                <p>{{address.place}}, {{address.number}}, {{address.zipCode}}<br />{{address.complement}}<br/>{{address.reference}}</p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </form>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 offset-md-2">
-            <a role="button" class="btn btn-secondary btn-lg btn-block" ng-href="#!/profile">Back to Profile</a>
         </div>
     </div>
 </div>

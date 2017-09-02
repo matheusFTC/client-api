@@ -15,7 +15,11 @@ app.controller("addressesController", function ($scope) {
             place: null,
             number: null,
             complement: null,
-            reference: null
+            reference: null,
+            neighborhood: null,
+            city: null,
+            state: null,
+            country: null
         };
     };
 
