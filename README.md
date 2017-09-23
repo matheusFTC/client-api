@@ -22,7 +22,7 @@ Um passo a passo...
 
 1. Execute o comando git clone para download dos fontes deste repositório;
 2. Vá para a pasta do projeto e execute o comando bower install;
-3. Levante a aplicação por meio de um servidor web;
+3. Levante a aplicação por meio de um servidor web.
 
 OBS.: Para fins de teste, você pode utlizar o módulo http-server (https://www.npmjs.com/package/http-server) para levantar o servidor web.
 
