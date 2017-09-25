@@ -2,7 +2,7 @@
 Client API com Angular.js e Bootstrap
 
 ## Resumo
-Este projeto foi desenvolvido para a disciplina de Criação de Aplicações Web Apps, da pós-graduação em DESIGN WEB APPS COM TECNOLOGIA FRONT-END, no INSTITUTO BRASILEIRO DE EXPERTISE PROFISSIONAL.
+Este projeto foi desenvolvido para as disciplinas de Criação de Aplicações Web Apps e Tec. Server-side com Node.js, da pós-graduação em DESIGN WEB APPS COM TECNOLOGIA FRONT-END, no INSTITUTO BRASILEIRO DE EXPERTISE PROFISSIONAL.
 
 Este projeto utiliza uma API hospedada no Heroku (https://restful-api-dwa.herokuapp.com).
 
